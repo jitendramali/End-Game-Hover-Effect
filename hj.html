@@ -1,0 +1,63 @@
+<!DOCTYPEhtml>
+<html>
+	<head>
+<title>Image Hover  Iffect</title>
+<style>
+body{
+	padding:0;
+	margin:0;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+overflow: hidden;
+}
+.imghover{
+	position:relative;
+	height: 400px;
+	width: 400px;
+}
+.imghover img:nth-child(1){
+	position: absolute;
+	top:0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transform-origin: left;
+}
+.imghover:hover img:nth-child(1){
+	transition:4s;
+	transition-delay: 1s;
+	transform: translateX(50px);
+	opacity: 0;
+	filter: blur(10px);
+
+
+}
+.imghover img:nth-child(2){
+	width:1200px;
+	height: 400px;
+	transform: translateX(400px) scaleX(0);
+	transform-origin: :left;
+
+}
+
+.imghover:hover img:nth-child(2){
+	transition: 7s;
+	transform: translateX(-400px) scaleX(1);
+}
+
+</style>
+
+</head>
+<body>
+	<div class="imghover">
+		<img src="../cafe/back.jpg" alt="Image Not Found">
+		<img src="../cafe/noise.png" alt="no imagw">
+
+	</div>
+
+</body>
+
+
+</html>
